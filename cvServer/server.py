@@ -7,7 +7,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/identify", methods=["PUT"])
 @cross_origin()
-def testing2():
+def identify():
     data = request.json
     # data contains a base64 encoded JPEG of the user submitted photo
     # do the actual CV work here
